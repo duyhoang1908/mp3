@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body>
+    <div id="app">
+        <div class="player">
+            <h3 class="player_title">Play music:</h3>
+            <h2 class="player_song_name"><marquee behavior="scroll" scrollamount="5" direction="right" class="heading">Cô đơn dành cho ai</marquee></h2>
+            <div class="player_cd">
+                <div class="cd"></div>
+            </div>
+            <div class="player_control">
+                <span class="control_item loop_btn"><i class="fas fa-undo"></i></span>
+                <span class="control_item prev_btn"><i class="fas fa-backward"></i></span>
+                <div class="control_play">
+                    <span class="control_center pause_btn close"><i class="fas fa-pause"></i></span>
+                    <span class="control_center play_btn"><i class="fas fa-play"></i></span>
+                </div>
+                <span class="control_item next_btn"><i class="fas fa-forward"></i></span>
+                <span class="control_item random_btn"><i class="fas fa-random"></i></span>
+            </div>
+            <input type="range" id="playtime" value="0" step="1" min="0" max="100">
+            <audio src="" id="audio"></audio>
+        </div>
+
+        <!--PLAYLIST-->
+        <div class="playlist">
+            <ul class="list_song">
+                <li class="song_item">
+                    <div class="item_img">
+                        <img src="/assets/img/codondanhchoai.jpg" alt="">
+                    </div>
+                    <div class="item_description">
+                        <h2>Cô đơn dành cho ai</h2>
+                        <p>NAL x LEE KEN</p>
+                    </div>
+                </li>
+                <li class="song_item">
+                    <div class="item_img">
+                        <img src="/assets/img/codondanhchoai.jpg" alt="">
+                    </div>
+                    <div class="item_description">
+                        <h2>Cô đơn dành cho ai</h2>
+                        <p>NAL x LEE KEN</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="/assets/app.js"></script>
+</body>
+</html>

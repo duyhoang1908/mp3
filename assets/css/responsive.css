@@ -1,0 +1,20 @@
+@media (max-width: 376px){
+    .player{
+        max-width: 360px;
+    }
+    .playlist{
+        width: 360px;
+    }
+    .player_cd{
+        width: 185px;
+    }
+}
+
+@media (min-width: 377px ) and (max-width: 415px){
+    .player{
+        max-width: 400px;
+    }
+    .playlist{
+        width: 400px;
+    }
+}
